@@ -8,21 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.springboot.consorcio.apirest.service.IFarmaciaService;
 
-
-@CrossOrigin(origins = {"http://localhost:4200", "*"})
+@CrossOrigin(origins = { "http://localhost:4200", "*" })
 @RestController
 @RequestMapping("/api")
 public class FarmaciaController {
-		
-	@Autowired
-	private IFarmaciaService farmaciaService;	
-	
-	@GetMapping(path = "/farmacias")
-	public String getFarmacias()   {	
 
-		String resultado = farmaciaService.getFarmacias();	    
+	@Autowired
+	private IFarmaciaService farmaciaService;
+
+	@GetMapping(path = "/farmacias")
+	public String getFarmacias() {
+
+		String resultado = farmaciaService.getFarmacias();
 		return resultado;
-			
+
 	}
 
 }

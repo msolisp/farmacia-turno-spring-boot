@@ -9,13 +9,13 @@ import com.springboot.consorcio.apirest.model.Comuna;
  *
  */
 public interface IComunaService {
-	
+
 	/**
 	 * @author maximiliano
 	 *
 	 */
 	public String getComunas(String reg_id);
-	
+
 	public List<Comuna> getAllComunas();
 
 }

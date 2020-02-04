@@ -22,7 +22,7 @@ public class ComunaServiceImpl implements IComunaService {
 
 	// objeto business object Comuna
 	ComunaBO comunaBusinessObject = new ComunaBO();
-	 
+
 	public String getComunas(String p_reg_id) {
 
 		LinkedMultiValueMap<String, Object> map = new LinkedMultiValueMap<>();
